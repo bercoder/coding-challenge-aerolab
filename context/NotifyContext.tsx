@@ -17,7 +17,7 @@ type Context = {
 
 export const NotifyContext = createContext({} as Context);
 
-export const NotifyProvider: FC = ({ children }: { children?: React.ReactNode }) => {
+export const NotifyProvider: FC = ({ children }: { children?: any }) => {
 
 	const [notifications, setNotifications] = useState<tMessage[]>([]);
 
