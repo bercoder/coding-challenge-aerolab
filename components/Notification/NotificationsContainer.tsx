@@ -20,7 +20,7 @@ const StyledNotifications = styled.div`
 	}
 `;
 
-export const NotificationsContainer: FC = ({ children }) => (
+export const NotificationsContainer: FC = ({ children }: { children?: React.ReactNode }) => (
 <StyledNotifications>
   {children}
 </StyledNotifications>)
