@@ -14,10 +14,13 @@ type Context = {
 	success: (message: tMessage["message"]) => void;
 	error: (message: tMessage["message"]) => void;
 };
+type Props = {
+	children: any;
+}
 
 export const NotifyContext = createContext({} as Context);
 
-export const NotifyProvider: FC = ({ children }: { children?: any }) => {
+export const NotifyProvider: FC<Props> = ({ children }) => {
 
 	const [notifications, setNotifications] = useState<tMessage[]>([]);
 
