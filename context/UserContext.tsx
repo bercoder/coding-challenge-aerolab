@@ -10,7 +10,8 @@ type Context = {
 }
 
 type Props = {
-  initialValue?: iUser; 
+  initialValue?: iUser;
+  children: React.ReactNode 
 }
 
 export const UserContext = createContext({} as Context);

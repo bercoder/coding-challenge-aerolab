@@ -11,6 +11,7 @@ type Props = {
 	show: boolean;
 	type: "success" | "error";
 	onClose: VoidFunction;
+	children: React.ReactNode;
 };
 
 export const Notification: FC<Props> = ({ show, type, onClose, children }) => {
