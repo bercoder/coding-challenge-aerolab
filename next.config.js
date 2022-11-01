@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    deviceSizes: [375, 1024, 1400],
+    domains: ['coding-challenge-api.aerolab.co'],
+  },
+}
